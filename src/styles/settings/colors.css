@@ -1,5 +1,26 @@
 :root {
-    --color-primary-medium: #2A7AE4;
+    --color-primary-medium: #eb3333;
+    
+    --color-frontend: #6BD1FF;
+    --color-backend: #00C86F;
+    --color-mobile: #FFBA05;
+    --color-ux: #DC6EBE;
+    --color-infra: #9CD33B;
+    --color-marketing: #6B5BE2;
+    --color-inovation: #FF8C2A;
+    --color-data-science: #9CD33B;
+
     --color-black-dark: #000;
+    --color-black-medium: rgba(0, 0, 0, 0.6);
+    --color-black-light: rgba(0, 0, 0, 0.5);
+    --color-black-lighter: #9E9E9E;
+
+    --color-gray-dark: #C2C2C2;
+    --color-gray-medium: #E5E5E5;
     --color-gray-light: #F5F5F5;
+
+
+    --color-error-dark: #C62828;
+    --color-error-medium: #E53935;
+    --color-error-light: #FCE7E7;
 }

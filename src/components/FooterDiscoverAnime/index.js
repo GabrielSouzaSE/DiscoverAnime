@@ -12,7 +12,7 @@ const FooterDiscoverAnime = styled.footer`
     border-top: 4px solid var(--color-primary-medium);
 
     & > ${LogoDiscoverAnime} {
-        margin-bottom: 20rem;
+        margin-bottom: 15rem;
     }
 `;
 

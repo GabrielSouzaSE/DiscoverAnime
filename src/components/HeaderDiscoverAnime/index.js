@@ -1,18 +1,26 @@
 import styled from 'styled-components';
 import ButtonDiscoverAnime from '../ButtonDiscoverAnime';
 import LogoDiscoverAnime from '../LogoDiscoverAnime';
+import container from '../../tools/container';
 
-const HeaderDiscoverAnime = styled.header`
+export const HeaderDiscoverAnime = styled.header`
+    background-color: var(--color-black-dark);
+    border-bottom: 4px solid var(--color-primary-medium);
+    padding: 20rem 0;
+
+    @media(max-width: 800px) {
+        padding: 15rem 16rem;
+    }
+`;
+
+export const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 40px;
-    background-color: var(--color-black-dark);
-    border-bottom: 4px solid var(--color-primary-medium);
+    ${container};
 
-    @media(max-width: 800px) {
+    @media(max-width: 800px){
         justify-content: center;
-        padding: 15px 16px;
 
         & > ${LogoDiscoverAnime} {
             height: 35px;
@@ -28,6 +36,6 @@ const HeaderDiscoverAnime = styled.header`
             width: 100vw;
         }
     }
-`;
 
-export default HeaderDiscoverAnime;
+
+`
