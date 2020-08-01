@@ -1,10 +1,10 @@
 import React from 'react';
+import { BannerDiscoverAnime, Text }from './components/BannerDiscoverAnime';
 import { HeaderDiscoverAnime, Wrapper } from './components/HeaderDiscoverAnime'
 import LogoDiscoverAnime from './components/LogoDiscoverAnime';
 import ButtonDiscoverAnime from './components/ButtonDiscoverAnime';
 import FooterDiscoverAnime from './components/FooterDiscoverAnime';
 import LogoImersao from './components/LogoImersao';
-import { BannerDiscoverAnime, Text }from './components/BannerDiscoverAnime';
 import TagDiscoverAnime from './components/TagDiscoveAnime';
 import TitleDiscoverAnime from './components/TitleDiscoverAnime';
 import DescriptionDiscoverAnime from './components/DescriptionDiscoverAnime';
@@ -19,7 +19,7 @@ function App() {
         <Wrapper>
           <LogoDiscoverAnime /> 
 
-          <ButtonDiscoverAnime>Novo vídeo</ButtonDiscoverAnime>
+          <ButtonDiscoverAnime as="a" href="/video/new">Novo vídeo</ButtonDiscoverAnime>
         </Wrapper>
       </HeaderDiscoverAnime>
 
@@ -38,8 +38,9 @@ function App() {
         title="Yu Yu Hakusho - Ep 01"
         avatar={Yuyu}
         channelName="MundoAFKTube"
-        Timer="23:31"
-        />
+        timer="23:31"
+        ></ThumbDiscoverAnime>
+
       </BannerDiscoverAnime>
 
       <FooterDiscoverAnime>

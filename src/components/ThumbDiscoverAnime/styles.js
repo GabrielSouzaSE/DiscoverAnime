@@ -55,8 +55,10 @@ export const Background = styled.div`
     --space: 10rem;
     --border: 4rem;
     --move-space: calc(var(--space) * -1);
+
     position: relative;
     background-color: var(--color-pixelart);
+    
     &::before,
     &::after {
         content: '';
@@ -66,12 +68,14 @@ export const Background = styled.div`
         background-color: var(--color-pixelart);
         transition: transform 100ms linear;
     }
+
     &::before {
         right: 0;
         top: 0;
         transform-origin: right top;
         transform: rotate(45deg) scale(0);
     }
+
     &::after {
         left: 0;
         bottom: 0;
@@ -79,6 +83,7 @@ export const Background = styled.div`
         z-index: -1;
         transform: rotate(-45deg) scale(0);
     }
+
     &:hover {
         &::before {
             transform: rotate(45deg) scale(1);
